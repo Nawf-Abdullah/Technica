@@ -1,0 +1,236 @@
+.onboarding{
+    position: relative;
+    z-index: 4;
+    background-image: linear-gradient(180deg,rgba(255,255,255,0.4),rgba(140, 132, 238, 0.7)), 
+    url('../images/onboarding-doctor.jpg');
+    width: 100%;
+    min-height: 100vh;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.onboarding h1{
+    text-align: center;
+    font-size: 3rem;
+    font-family: 'Rubik', sans-serif;
+     color: var(--seconday-30); 
+}
+
+.onboarding-form{
+    width: 80vw;
+    height: 80vh;
+    background-color: var(--primary-60);
+    border-radius: 20px;
+    padding: 20px;
+    margin-top: 40px;
+}
+
+/*Photo by Lukas: https://www.pexels.com/photo/variety-of-vegetables-616401/ Photo by Karolina Grabowska: https://www.pexels.com/photo/unrecognizable-crop-man-in-wristwatch-with-stethoscope-4021769/*/
+
+.onboarding-form input{
+    font-size: 1.1rem;
+    font-family: 'Rubik', sans-serif;
+    padding: 10px 5px;
+    border-radius: 20px;
+    color: var(--seconday-30);
+    border: 3px solid rgb(172, 172, 172);
+}
+
+.onboarding-form input:focus{
+    outline: none;
+    border-color: var(--seconday-30);
+}
+
+.onboarding form input::-webkit-outer-spin-button,
+.onboarding form input::-webkit-inner-spin-button{
+  -webkit-appearance : none;
+  margin: 0;
+}
+
+.welcome form,.onboarding-form form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.welcome img{
+    width: 300px;
+    height: 300px;
+    border-radius: 100%;
+    object-fit: cover;
+}
+
+
+.cardholder{
+    display: flex;
+    position:relative;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px;
+    opacity: 0.9;
+    overflow: hidden;
+    position: relative;
+    bottom: 30px;
+    min-height: 15%;
+}
+
+
+.card,.onboarding form input[type='radio']+label{
+    margin: 10px;
+    width: 10%;
+    height: 10%;
+    padding: 10px;
+    border: 3px solid #CD9EFF;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: rgb(182, 182, 182);
+    flex-direction: column;
+    font-family: 'Rubik', sans-serif;
+    box-shadow: 0 0 5px rgb(182, 182, 182);
+    opacity: 1;
+    transition: 250ms;
+    text-align: center;
+    word-wrap: normal;
+}
+
+
+.card img{
+    width: 60%;
+    height: 60%;
+}
+
+.card:hover,.onboarding .active{
+    transform: scale(1);
+    border: 3px solid #dc3545;
+    }
+
+h2{
+    font-family: 'Rubik', sans-serif;
+    color: var(--seconday-30);
+}
+
+h2.bloody{
+    color: #dc3545;
+}
+
+.onboarding .active{
+    box-shadow: 10px 20px 20px #dc3545;
+    color: #dc3545;
+}
+
+.chooseBlood,.height-weight{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.height-weight{
+    flex-direction: row;
+}
+
+.chooseBlood button{
+    margin: 20px;
+}
+
+.onboarding form input[type='radio']{
+    display: none;
+}
+
+.onboarding form input[type='radio']+label{
+    border-radius: 10px;
+    background-color: var(--tertiary-10);
+    display: inline;
+}
+
+.onboarding form input[type='radio']:checked+label{
+    box-shadow: 10px 20px 20px rgb(175, 175, 175);
+}
+
+
+.onboard-forms-enter{
+    position: absolute;
+    transform: translateX(110%);
+}
+
+.onboard-forms-enter-active{
+    transform: translateX(0%);
+    transition: all 500ms ease;
+}
+
+.onboard-forms-exit {
+    transform: translateX(0%);
+    transition: all 500ms ease;
+}
+
+.onboard-forms-exit-active{
+    position: absolute;
+    transform: translateX(-110%);
+}
+
+.date-of-birth{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.date-of-birth input{
+    width: 40px;
+    height: 30px;
+    border-radius: 10px;
+    margin: 10px;
+}
+
+input#year{
+    width: 60px;
+}
+
+.gender-dob{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.gender-dob div{
+    margin: 10px 0;
+}
+
+.gender-dob h2{
+    text-align: center;
+}
+
+.welcome .profile div.name{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+@media only screen and (max-width:500px){
+
+    .welcome .profile div.name{
+        flex-direction: column;
+    }
+
+    .onboarding h1{
+        font-size: 1.7rem;
+    }
+
+    .onboarding-form img{
+        width: 200px;
+        height: 200px;
+    }
+
+    .onboarding-form input{
+        font-size: 0.9rem;
+        padding: 5px 10px;
+        border-radius: 5px;
+        margin: 10px;
+    }
+}

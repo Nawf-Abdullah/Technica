@@ -1,0 +1,19 @@
+.allergic-report,.diagnosed,.prescription{
+    background-color: var(--tertiary-10);
+    padding: 20px;
+    min-height: 30%;
+    border-radius: 20px;
+    box-shadow: 5px 5px 10px rgb(172, 172, 172);
+    margin: 20px;
+}
+
+.allergic-report p,.diagnosed p,.prescription p{
+    color: rgb(182, 182, 182);
+    font-family: 'Rubik',sans-serif;
+}
+
+.health-status{
+    display:flex;
+    justify-content: stretch;
+    align-items: flex-start;
+}

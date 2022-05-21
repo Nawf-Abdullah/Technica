@@ -1,0 +1,11 @@
+:root{
+  --primary-60:#EAE5FE;
+  --seconday-30:#8C84EE;
+  --tertiary-10:#FAF8FF;
+}
+
+
+body{
+  background-color: var(--primary-60);
+}
+/*<a href="https://www.flaticon.com/free-icons/doctor" title="doctor icons">Doctor icons created by Icon Pond - Flaticon</a>*/ 

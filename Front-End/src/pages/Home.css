@@ -1,0 +1,231 @@
+.home{
+    position: relative;
+    top: 100px;
+}
+
+.main-sections{
+    width: 100vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
+    overflow: hidden;
+}
+
+.main-sections h1{
+    padding-left: 20px;
+    font-family: 'Rubik', sans-serif;
+    font-size:4.7rem;
+    color: var(--seconday-30);
+    transition: 250ms;
+}
+
+.tagline{
+    font-family: 'Rubik', sans-serif;
+    font-size: 1.4rem;
+    color: rgb(172, 172, 172);
+    letter-spacing: 3px;
+    text-align: center;
+}
+
+
+.main-sections .button-container{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.features{
+    background-color: var(--tertiary-10);
+    padding: 10px;
+    font-family: 'Rubik', sans-serif;
+    color: var(--seconday-30);
+    font-size: 2rem;
+    width: 100vw;
+    height: auto;
+    overflow-x: hidden;
+}
+
+.features h2,.vaccine h2{
+    text-align: center;
+}
+
+
+
+.features-container{
+    width: 100vw;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 20px;
+    overflow: hidden;
+}
+
+.features-container .feature{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+.feature img{
+    width: 50%;
+    margin: 10px;
+}
+
+.inner-vaccine{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 20px;
+    margin: 40px 0;
+}
+
+.inner-vaccine img{
+    width: 50%;
+}
+
+
+.vaccine h2,.footer h2{
+    text-align: center;
+    font-family: 'Rubik', sans-serif;
+    color: var(--seconday-30);
+    font-size: 2rem;
+}
+
+.inner-vaccine div{
+    display: flex;
+    flex-direction: column;
+}
+
+.footer{
+    width: 100vw;
+    padding: 20px;
+    background-color: var(--tertiary-10);
+}
+
+.footer div{
+    display: flex;justify-content: space-evenly;
+    align-items: center;
+}
+
+.footer input{
+    width: 40%;
+    padding: 20px;
+    font-size: 2rem;
+    border: 2px solid var(--primary-60);
+    border-radius: 20px;
+    margin-right: 20px;
+    color: var(--seconday-30);
+}
+
+.footer input:focus{
+    outline: none;
+    border: 2px solid var(--seconday-30);
+}
+
+.theauthmodal-enter{
+    position: absolute;
+    transform: translateY(-110%);
+}
+
+.theauthmodal-enter-active{
+    transform: translateY(0%);
+    transition: all 250ms ease-in-out;
+}
+
+.theauthmodal-exit {
+    transform: translateY(0%);
+    transition: all 250ms ease-in-out;
+}
+
+.theauthmodal-exit-active{
+    position: absolute;
+    transform: translateY(-110%);
+}
+
+@media only screen and (max-width:1242px){
+    .main-sections h1{
+        font-size:3rem
+    }
+
+    .tagline{
+        font-family: 1rem;
+    }
+}
+
+@media only screen and (max-width:1242px){
+    .main-sections h1{
+        font-size:2.5rem;
+        padding-left: 40px;
+    }
+
+    .tagline{
+        font-family: 1rem;
+    }
+
+    .footer img{
+        width: 40%;
+    }
+
+    
+}
+
+@media only screen and (max-width:1000px){
+    .main-sections{
+        flex-direction: column;
+    }
+
+    .main-sections h1{
+       text-align: center;
+    }
+
+    .main-sections img{
+        width: 100%;
+        height: auto;
+    }
+
+    .feature .tagline{
+        font-size: 1.5rem;
+    }
+
+}
+
+@media only screen and (max-width:765px) {
+    .main-sections h1{
+        font-size:1.9rem;
+    }
+
+    .tagline,.feature .tagline {
+        font-size: 0.7rem;
+    }
+
+    
+
+}
+
+@media only screen and (max-width:677px){
+    body{
+        position: relative;
+        right: 20px;
+        overflow-x: hidden;
+    }
+
+    .features-container{
+        flex-direction: column;
+        margin: 0;
+    }
+
+    .inner-vaccine{
+        flex-direction: column;
+    }
+
+    .footer div{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}

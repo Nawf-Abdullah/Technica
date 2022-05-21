@@ -1,0 +1,25 @@
+.loading{
+    width:100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.loading img{
+    width:20%;
+    animation: beat 2s ease infinite;
+}
+
+@keyframes beat {
+    from,to{
+        transform: scale(1);
+    }
+
+    50%{
+        transform: scale(2);
+    }
+}

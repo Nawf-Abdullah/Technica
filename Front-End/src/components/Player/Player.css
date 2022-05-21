@@ -1,0 +1,31 @@
+.player{
+    font-family: 'Rubik', sans-serif;
+    background-color:var(--tertiary-10) ;
+    border-radius: 20px;
+    backdrop-filter: blur(5px);
+    box-shadow: 5px 20px 20px rgb(172,172,172);
+    width: 35%;
+    margin: 20px ;
+    padding: 5px;
+}
+
+.player ul li {
+    list-style: none;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 5px;
+    color: var(--seconday-30);
+    cursor: pointer;
+}
+
+.player ul li h4{
+    font-size: 1.2rem;
+    margin: 10px;
+}
+
+p.credit{
+    color: rgb(172,172,172);
+    font-size: 0.9rem;
+    margin: 5px;
+}
