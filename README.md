@@ -13,5 +13,8 @@ Password: 1234
 Username:patient@techhospital.com
 Password:123
 
-##Drive Link:
+## Drive Link:
 https://drive.google.com/drive/folders/1xpznE8crJfLG87TgO5pR0YTN0V3lOrGz?usp=sharing
+
+## Powerpoint Presentation:
+https://www.canva.com/design/DAFBZ6ZXuAM/KurtI-ZU6Ku2OKjZjQNrZg/view?utm_content=DAFBZ6ZXuAM&utm_campaign=designshare&utm_medium=link&utm_source=publishsharelink
