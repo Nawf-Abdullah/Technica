@@ -12,3 +12,6 @@ Password: 1234
 ## Credentials for patients
 Username:patient@techhospital.com
 Password:123
+
+##Drive Link:
+https://drive.google.com/drive/folders/1xpznE8crJfLG87TgO5pR0YTN0V3lOrGz?usp=sharing
